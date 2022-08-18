@@ -10,8 +10,11 @@
             class="ml-3 mr-2 rounded-lg border border-gray-200 bg-white px-5 text-sm font-medium text-gray-900 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 hover:bg-gray-100 hover:text-blue-700">
             Search
         </button>
-        <button @click="reset">Reset</button>
-
+        <button
+            class="ml-3 mr-2 rounded-lg border border-gray-200 bg-white px-5 text-sm font-medium text-gray-900 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 hover:bg-gray-100 hover:text-blue-700"
+            @click="reset">
+            Reset
+        </button>
     </div>
 </template>
 
@@ -35,6 +38,5 @@ export default {
             this.$emit('reset')
         },
     }
-
 }
 </script>

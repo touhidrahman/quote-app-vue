@@ -19,7 +19,8 @@
         </div>
 
         <div class="col-span-2 lg:col-span-1">
-            <Authors :authors="authors" @changePage="updateAuthorPage($event)"
+            <Authors :authors="authors.allAuthors" :totalCount="authors.totalCount" :currentPage="authors.currentPage"
+                :totalPages="authors.totalPages" @changePage="updateAuthorPage($event)"
                 @selectAuthor="showAuthorQoutes($event)" />
 
             <Tags class="mt-8" :tags="tags" @selectTag="showTagQoutes($event)" />

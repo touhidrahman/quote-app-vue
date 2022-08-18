@@ -13,7 +13,7 @@
 
 <script>
 export default {
-    props: ['tags'],
+    props: { tags: Array },
 
     methods: {
         emitTagSelected(tagName) {
